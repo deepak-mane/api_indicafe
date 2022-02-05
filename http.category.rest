@@ -1,0 +1,30 @@
+### get all categories
+GET http://localhost:7787/api/categories
+Accept: application/json
+### get invalid  routes
+GET http://localhost:7787/api/categories2
+Accept: application/json
+
+### Create a New Category
+POST http://localhost:7787/api/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "New Category 0045"
+}
+
+### Create a New Category - ERROR
+POST http://localhost:7787/api/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Newtjhhhhhhhhhhhhhhhhhhhhhhhjhhhhhhhhhhhhhhhh"
+}
+
+
+### get Category By ID
+
+GET http://localhost:7787/api/categories/61fd61a0f5ba6a347555
+Accept: application/json

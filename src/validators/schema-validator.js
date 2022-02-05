@@ -1,0 +1,19 @@
+const Joi = require('joi');
+
+const categorySchema = Joi.object({
+  name: Joi.string().required().min(5).max(25)
+})
+
+const dishSchema = Joi.object({
+  name: Joi.string().required().min(5),
+  description: Joi.string().required().min(10).max(150),
+  price: Joi.string().required(),
+  category: Joi.string().required()
+})
+
+module.exports = {
+  categorySchema: categorySchema,
+  dishSchema: dishSchema,
+}
+
+

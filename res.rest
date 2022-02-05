@@ -1,0 +1,3 @@
+#### root end point
+GET http://localhost:7787
+Accept: application/json

@@ -1,0 +1,23 @@
+### Create a New Dish
+POST http://localhost:7787/api/dishes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Test Dish01",
+  "description": "Test Dish",
+  "price": "100",
+  "category": "61fd61a0f5ba6a347f4aa7cd"
+}
+
+
+#### Get all the dishes
+GET http://localhost:7787/api/dishes
+Accept: application/json
+
+
+### Get Dish by Id
+GET http://localhost:7787/api/dishes/61fe9e4cc02682b35c94cbba
+Accept: application/json
+
+### Get photo
