@@ -11,7 +11,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "New Category 0045"
+  "name": "Dinner Dishes"
 }
 
 ### Create a New Category - ERROR
