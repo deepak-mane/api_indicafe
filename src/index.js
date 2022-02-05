@@ -19,7 +19,7 @@ app.use(express.urlencoded({ limit: '1mb', extended: true }))
 
 const PORT = process.env.PORT
 const DATABASE = process.env.DATABASE
-const PREFIX = process.env.PREFIX
+const PREFIX = "/" + process.env.PREFIX
 
 app.use(PREFIX, categoryRouter)
 app.use(PREFIX, dishRouter)
